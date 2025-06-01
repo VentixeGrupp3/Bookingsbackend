@@ -26,20 +26,34 @@ The API publishes booking events to an Azure Service Bus queue to support asynch
 
 ## User Endpoints
 ─────────────────────────────────────────────────────────────────────────────
+
  Method | Endpoint                                           | Description
+ 
 --------+----------------------------------------------------+-------------------------------
- POST   | /api/booking/user-create                           | Create a booking (User)
+
+ POST   | /api/booking/user-create                           | Create a booking
+ 
  GET    | /api/booking/user-bookings/{userId}                | Get all bookings by user ID
+ 
  GET    | /api/booking/user-bookingnumber/{bookingNumber}    | Get booking by booking number
+ 
  GET    | /api/booking/user-specific-id/{bookingId}          | Get specific booking by ID
 
 ## Admin Endpoints
 ─────────────────────────────────────────────────────────────────────────────
+
  Method | Endpoint                                              | Description
+ 
 --------+-------------------------------------------------------+-------------------------------
- POST   | /api/booking/admin-create                             | Create a booking (Admin)
+
+ POST   | /api/booking/admin-create                             | Create a booking
+ 
  DELETE | /api/booking/admin-delete/{bookingId}                 | Delete a booking by ID
+ 
  GET    | /api/booking/admin-get-all                            | Get all bookings
+ 
  GET    | /api/booking/admin-specific-id/{bookingId}            | Get specific booking by ID
+ 
  GET    | /api/booking/admin-bookingnumber/{bookingNumber}      | Get booking by booking number
+ 
  PUT    | /api/booking/admin-update/{bookingId}                 | Update an existing booking
