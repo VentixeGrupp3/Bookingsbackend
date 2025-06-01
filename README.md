@@ -25,7 +25,7 @@ All endpoints follow REST conventions and return JSON-formatted responses.
 The API publishes booking events to an Azure Service Bus queue to support asynchronous processing and integration with Invoices.
 
 ## User Endpoints
-─────────────────────────────────────────────────────────────────────────────
+─────────────────────────────────────────────────────────────────────────
 
  Method | Endpoint                                           | Description
  
@@ -40,7 +40,7 @@ The API publishes booking events to an Azure Service Bus queue to support asynch
  GET    | /api/booking/user-specific-id/{bookingId}          | Get specific booking by ID
 
 ## Admin Endpoints
-─────────────────────────────────────────────────────────────────────────────
+─────────────────────────────────────────────────────────────────────────
 
  Method | Endpoint                                              | Description
  
